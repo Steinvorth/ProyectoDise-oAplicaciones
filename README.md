@@ -1,2 +1,2 @@
-# ProyectoDise-oAplicaciones
+# ProyectoDisenoAplicaciones
 Proyecto final del curso Diseño de Aplicaciones.
