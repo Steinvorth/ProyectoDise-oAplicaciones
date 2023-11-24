@@ -1,0 +1,17 @@
+C:\Users\ronal\OneDrive\Documents\GitHub\ProyectoDisenoAplicaciones\Proyecto\Proyecto\bin\Debug\Proyecto.exe.config
+C:\Users\ronal\OneDrive\Documents\GitHub\ProyectoDisenoAplicaciones\Proyecto\Proyecto\bin\Debug\Proyecto.exe
+C:\Users\ronal\OneDrive\Documents\GitHub\ProyectoDisenoAplicaciones\Proyecto\Proyecto\bin\Debug\Proyecto.pdb
+C:\Users\ronal\OneDrive\Documents\GitHub\ProyectoDisenoAplicaciones\Proyecto\Proyecto\obj\Debug\Proyecto.csproj.AssemblyReference.cache
+C:\Users\ronal\OneDrive\Documents\GitHub\ProyectoDisenoAplicaciones\Proyecto\Proyecto\obj\Debug\MainWindow.g.cs
+C:\Users\ronal\OneDrive\Documents\GitHub\ProyectoDisenoAplicaciones\Proyecto\Proyecto\obj\Debug\App.g.cs
+C:\Users\ronal\OneDrive\Documents\GitHub\ProyectoDisenoAplicaciones\Proyecto\Proyecto\obj\Debug\Proyecto_MarkupCompile.cache
+C:\Users\ronal\OneDrive\Documents\GitHub\ProyectoDisenoAplicaciones\Proyecto\Proyecto\obj\Debug\Proyecto_MarkupCompile.lref
+C:\Users\ronal\OneDrive\Documents\GitHub\ProyectoDisenoAplicaciones\Proyecto\Proyecto\obj\Debug\MainWindow.baml
+C:\Users\ronal\OneDrive\Documents\GitHub\ProyectoDisenoAplicaciones\Proyecto\Proyecto\obj\Debug\Proyecto.g.resources
+C:\Users\ronal\OneDrive\Documents\GitHub\ProyectoDisenoAplicaciones\Proyecto\Proyecto\obj\Debug\Proyecto.Properties.Resources.resources
+C:\Users\ronal\OneDrive\Documents\GitHub\ProyectoDisenoAplicaciones\Proyecto\Proyecto\obj\Debug\Proyecto.csproj.GenerateResource.cache
+C:\Users\ronal\OneDrive\Documents\GitHub\ProyectoDisenoAplicaciones\Proyecto\Proyecto\obj\Debug\Proyecto.csproj.CoreCompileInputs.cache
+C:\Users\ronal\OneDrive\Documents\GitHub\ProyectoDisenoAplicaciones\Proyecto\Proyecto\obj\Debug\Proyecto.exe
+C:\Users\ronal\OneDrive\Documents\GitHub\ProyectoDisenoAplicaciones\Proyecto\Proyecto\obj\Debug\Proyecto.pdb
+C:\Users\ronal\OneDrive\Documents\GitHub\ProyectoDisenoAplicaciones\Proyecto\Proyecto\obj\Debug\HomeWindow.g.cs
+C:\Users\ronal\OneDrive\Documents\GitHub\ProyectoDisenoAplicaciones\Proyecto\Proyecto\obj\Debug\HomeWindow.baml
