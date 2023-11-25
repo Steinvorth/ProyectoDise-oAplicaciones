@@ -1,13 +1,14 @@
-﻿<Window x:Class="Proyecto.Windows.MantVehiculos"
+﻿<Window x:Class="Proyecto.Windows.MantConductor"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto.Windows"
         mc:Ignorable="d"
-        Title="MantVehiculos" Height="450" Width="800">
+        Title="MantConductor" Height="450" Width="800">
     <Grid>
         <Rectangle HorizontalAlignment="Left" Height="469" Margin="-14,-19,0,0" Stroke="Black" Fill="#2c2f33" VerticalAlignment="Top" Width="825"/>
+
 
     </Grid>
 </Window>

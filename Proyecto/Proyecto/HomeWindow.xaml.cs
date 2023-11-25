@@ -1,5 +1,6 @@
 ﻿using Microsoft.Win32;
 using Proyecto.Base_de_Datos;
+using Proyecto.Windows;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -29,6 +30,9 @@ namespace Proyecto
         //DB
         Connect_DB db = new Connect_DB();
         SqlConnection connection;
+
+        //ventanas
+        MantConductor conductorWindow = new MantConductor();
 
         public HomeWindow()
         {
@@ -175,9 +179,11 @@ namespace Proyecto
 
         }
 
+        //boton mantenimiento de conductores, Este permite que el usuario pueda acceder a la ventana
+        //estam seccion permite que el usuario pueda modificar conductores
         private void conductores_btn_Click(object sender, RoutedEventArgs e)
         {
-
+            conductorWindow.Show();
         }
 
         private void vehiculos_btn_Click(object sender, RoutedEventArgs e)
