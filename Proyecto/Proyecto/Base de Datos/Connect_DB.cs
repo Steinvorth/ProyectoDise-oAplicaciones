@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace Proyecto.Base_de_Datos
 {
@@ -48,26 +49,21 @@ namespace Proyecto.Base_de_Datos
             }
             catch
             {
-                // If login 1 fails, try login 2: Juan
-                string server = "100.104.98.58";
-                string database = "Proyecto";
-                string user = "juanes";
-                string password = "12345678";
-
-                connectionString = $"Server={server};Database={database};User Id={user};Password={password}";
+                // If login 1 fails, attempt a local connection
+                string localConnectionString = "Server=(local);Database=YourLocalDatabase;Integrated Security=True";
 
                 try
                 {
-                    using (SqlConnection connection = new SqlConnection(connectionString))
+                    using (SqlConnection localConnection = new SqlConnection(localConnectionString))
                     {
-                        connection.Open();
-                        connection.Close();
+                        localConnection.Open();
+                        localConnection.Close();
                     }
                 }
                 catch
                 {
-                    // Prompt an error message that database is not accessible
-                    throw new InvalidOperationException("No se puede conectar a la base de datos. Verifique si esta encendido el servidor, y si tiene las credenciales correctas.");
+                    // Prompt an error message that both connections failed
+                    MessageBox.Show("No se puede conectar a la base de datos, ni de forma remota ni localmente. Verifique si la base de datos está disponible y si tiene las credenciales correctas.");
                 }
             }
         }

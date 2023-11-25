@@ -5,16 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="350">
+        Title="MainWindow" Height="450" Width="350" ResizeMode="NoResize">
     <Grid>
 
+        <Rectangle HorizontalAlignment="Left" Height="501" Margin="-36,-32,0,0" Fill="#23272a" VerticalAlignment="Top" Width="444"/>
+        
         <TextBox x:Name="userName" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" Margin="0,165,0,0" FontSize="16"/>
-        <Label Content="Bienvenido al Sistema" HorizontalAlignment="Center" Margin="0,37,0,0" VerticalAlignment="Top" Width="240" FontSize="24"/>
-        <Label Content="Para continuar, inicie sesion." HorizontalAlignment="Center" Margin="0,79,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <Label Content="Usuario:" HorizontalAlignment="Left" Margin="83,134,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <Label Content="Contraseña:" HorizontalAlignment="Left" Margin="84,212,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Bienvenido al Sistema" Foreground="#99aab5" HorizontalAlignment="Center" Margin="0,37,0,0" VerticalAlignment="Top" Width="259" FontSize="24" FontWeight="Bold"/>
+        <Label Content="Para continuar, inicie sesion." Foreground="#99aab5" HorizontalAlignment="Center" Margin="0,79,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="Usuario:" Foreground="#99aab5" HorizontalAlignment="Left" Margin="83,134,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Contraseña:" Foreground="#99aab5" HorizontalAlignment="Left" Margin="84,212,0,0" VerticalAlignment="Top" FontSize="16"/>
         <TextBox x:Name="userPass" HorizontalAlignment="Center" Margin="0,243,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" FontSize="16"/>
         <Button x:Name="ingresarBtn" Content="Ingresar" HorizontalAlignment="Left" Margin="157,303,0,0" VerticalAlignment="Top" Width="108" FontSize="16" Click="ingresarBtn_Click"/>
+
+
+
+
 
 
     </Grid>

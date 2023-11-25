@@ -30,6 +30,13 @@ namespace Proyecto
 
         HomeWindow mainPage = new HomeWindow();
 
+        public MainWindow()
+        {
+            InitializeComponent();
+
+            connection = db.GetConnection();
+        }
+
         private void CheckLogin(string username, string password)
         {
             try
@@ -52,6 +59,7 @@ namespace Proyecto
                         {
                             // Login successful, open the main page
                             mainPage.Show();
+                            mainPage.GetUsername(username);
                             this.Close();
                         }
                         else

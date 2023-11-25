@@ -5,8 +5,51 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto"
         mc:Ignorable="d"
-        Title="HomeWindow" Height="800" Width="1200">
+        Title="HomeWindow" Height="800" Width="1200" ResizeMode="NoResize">
     <Grid>
+
+        <!-- Estos son los rectandulos de atras -->
+        <Rectangle HorizontalAlignment="Left" Margin="-26,-18,0,-18" Fill="#23272a" Width="460"/>
+        <Rectangle HorizontalAlignment="Left" Margin="422,-36,0,0" Fill="#2c2f33" Width="910" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.409"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="3.533"/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+
+        <!-- Este es el "SideBar" -->
+        <Rectangle HorizontalAlignment="Left" Height="215" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="392"/>
+        <Image Name="profilePic" HorizontalAlignment="Left" Height="179" Margin="21,19,0,0" VerticalAlignment="Top" Width="178" Stretch="UniformToFill"/>
+        <Label Name="userNom" Content="" HorizontalAlignment="Left" Margin="204,34,0,0" VerticalAlignment="Top" FontSize="20" Foreground="#99aab5"/>
+        <Label Name="userLastName" Content="" HorizontalAlignment="Left" Margin="206,91,0,0" VerticalAlignment="Top" FontSize="20" Foreground="#99aab5"/>
+        <Label Name="userRole" Content="" HorizontalAlignment="Left" Margin="204,148,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.698,0.098" FontSize="20" Foreground="#99aab5"/>
         
+        <Button Name="salir_btn" Content="Salir" HorizontalAlignment="Left" Margin="21,696,0,0" VerticalAlignment="Top" Height="62" Width="183" FontSize="36" Click="salir_btn_Click"/>
+
+
+        <!-- Title -->
+        <Label Content="Presione la Opcion que Necesite:" HorizontalAlignment="Left" Margin="498,73,0,0" VerticalAlignment="Top" Width="642" FontSize="36" FontWeight="Bold" Foreground="#99aab5" />
+
+        <!-- Nav Buttons -->
+        <Button Name="conductores_btn" HorizontalAlignment="Left" Margin="498,474,0,0" VerticalAlignment="Top" Height="216" Width="304" FontSize="36" Click="conductores_btn_Click">
+            <TextBlock Text="Mantenimiento Conductores" TextWrapping="Wrap" TextAlignment="Center"/>
+        </Button>
+
+        <Button Name="rutas_btn" HorizontalAlignment="Left" Margin="836,474,0,0" VerticalAlignment="Top" Height="216" Width="304" FontSize="36" Click="rutas_btn_Click">
+            <TextBlock Text="Mantenimiento Rutas" TextWrapping="Wrap" TextAlignment="Center"/>
+        </Button>
+
+        <Button Name="carga_btn" HorizontalAlignment="Left" Margin="498,217,0,0" VerticalAlignment="Top" Height="216" Width="304" FontSize="36" Click="Button_Click">
+            <TextBlock Text="Enviar Carga" TextWrapping="Wrap"/>
+        </Button>
+
+        <Button Name="vehiculos_btn" HorizontalAlignment="Left" Margin="836,217,0,0" VerticalAlignment="Top" Height="216" Width="304" FontSize="36" Click="vehiculos_btn_Click">
+            <TextBlock Text="Mantenimiento Vehiculos" TextWrapping="Wrap" TextAlignment="Center"/>
+        </Button>
+
     </Grid>
 </Window>
