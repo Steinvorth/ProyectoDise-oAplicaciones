@@ -8,6 +8,8 @@
         Title="MantConductor" Height="450" Width="800">
     <Grid>
         <Rectangle HorizontalAlignment="Left" Height="469" Margin="-14,-19,0,0" Stroke="Black" Fill="#2c2f33" VerticalAlignment="Top" Width="825"/>
+        <DataGrid x:Name="DG" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="130,133,130,70" FontSize="14"/>
+        <Label Content="Conductores Disponibles" HorizontalAlignment="Center" Margin="0,35,0,0" VerticalAlignment="Top" Width="436" FontSize="36" FontWeight="Bold" Foreground="#99aab5" />
 
 
     </Grid>
