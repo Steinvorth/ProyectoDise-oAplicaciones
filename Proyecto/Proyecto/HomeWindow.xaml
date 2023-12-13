@@ -43,7 +43,7 @@
             <TextBlock Text="Mantenimiento Rutas" TextWrapping="Wrap" TextAlignment="Center"/>
         </Button>
 
-        <Button Name="carga_btn" HorizontalAlignment="Left" Margin="498,217,0,0" VerticalAlignment="Top" Height="216" Width="304" FontSize="36" Click="Button_Click">
+        <Button Name="carga_btn" HorizontalAlignment="Left" Margin="498,217,0,0" VerticalAlignment="Top" Height="216" Width="304" FontSize="36" Click="Carga_Click">
             <TextBlock Text="Enviar Carga" TextWrapping="Wrap"/>
         </Button>
 

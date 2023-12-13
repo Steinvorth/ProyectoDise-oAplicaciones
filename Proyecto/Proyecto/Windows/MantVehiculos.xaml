@@ -7,7 +7,21 @@
         mc:Ignorable="d"
         Title="MantVehiculos" Height="450" Width="800">
     <Grid>
-        <Rectangle HorizontalAlignment="Left" Height="469" Margin="-14,-19,0,0" Stroke="Black" Fill="#2c2f33" VerticalAlignment="Top" Width="825"/>
+        <Rectangle HorizontalAlignment="Left" Height="469" Margin="-14,-7,0,0" Stroke="Black" Fill="#2c2f33" VerticalAlignment="Top" Width="825"/>
+        <Label Content="Seleccione el Vehiculo que desea poner en mantenimiento:" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="642" FontSize="22" FontWeight="Bold" Foreground="#99aab5" />
+
+        <ComboBox Name="selectCbox" HorizontalAlignment="Left" Margin="79,99,0,0" VerticalAlignment="Top" Width="181"/>
+        <Button Name="enviarBtn" Content="Enviar a Mantenimiento" HorizontalAlignment="Left" Margin="544,99,0,0" VerticalAlignment="Top" Height="22" Width="147" Click="enviarBtn_Click"/>
+        <Label Content="Vehiculos en Mantenimiento:" HorizontalAlignment="Left" Margin="79,131,0,0" VerticalAlignment="Top" Width="203" FontSize="14" FontWeight="Bold" Foreground="#99aab5" />
+
+
+        <Label Content="Vehiculos por Placa:" HorizontalAlignment="Left" Margin="79,65,0,0" VerticalAlignment="Top" Width="143" FontSize="14" FontWeight="Bold" Foreground="#99aab5" />
+        <Label Content="Descripcion de Mantenimiento:" HorizontalAlignment="Left" Margin="280,65,0,0" VerticalAlignment="Top" Width="250" FontSize="14" FontWeight="Bold" Foreground="#99aab5" />
+
+        <Label Content="Vehiculos Listos:" HorizontalAlignment="Left" Margin="544,131,0,0" VerticalAlignment="Top" Width="118" FontSize="14" FontWeight="Bold" Foreground="#99aab5" />
+        <DataGrid Name="vehiculosMantenimiento" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="19,165,458,74"/>
+        <DataGrid Name="vehiculosListos" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="441,165,36,74"/>
+        <TextBox Name="descripcionTbox" HorizontalAlignment="Left" Margin="280,99,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250" Height="22"/>
 
     </Grid>
 </Window>

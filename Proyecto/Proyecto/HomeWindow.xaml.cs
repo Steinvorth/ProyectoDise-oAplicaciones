@@ -33,6 +33,7 @@ namespace Proyecto
 
         //ventanas
         MantConductor conductorWindow = new MantConductor();
+        MantVehiculos mantVehiculos = new MantVehiculos();
 
         public HomeWindow()
         {
@@ -188,17 +189,17 @@ namespace Proyecto
 
         private void vehiculos_btn_Click(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
+            mantVehiculos.Show();
         }
 
         private void salir_btn_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void Carga_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
