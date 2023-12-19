@@ -84,7 +84,7 @@ namespace Proyecto.Windows
 
             ActualizarVehiculosEnMantenimiento();
             ActualizarVehiculosListos();
-            CargarVehiculos();  // Update the available vehicles in ComboBox
+            CargarVehiculos();  //actalizar los vehiculos disponibles en el ComboBox
 
             timer.Start();
         }
@@ -114,7 +114,7 @@ namespace Proyecto.Windows
 
             ActualizarVehiculosEnMantenimiento();
             ActualizarVehiculosListos();
-            CargarVehiculos();  // Update the available vehicles in ComboBox
+            CargarVehiculos();  //actalizar los vehiculos disponibles en el ComboBox
 
             timer.Stop();
         }

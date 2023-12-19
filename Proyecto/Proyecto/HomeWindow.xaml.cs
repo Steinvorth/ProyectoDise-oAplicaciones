@@ -31,10 +31,6 @@ namespace Proyecto
         Connect_DB db = new Connect_DB();
         SqlConnection connection;
 
-        //ventanas
-        MantConductor conductorWindow = new MantConductor();
-        MantVehiculos mantVehiculos = new MantVehiculos();
-
         public HomeWindow()
         {
             InitializeComponent();     
@@ -45,9 +41,7 @@ namespace Proyecto
         public void GetUsername(string usr)
         {
             this.username = usr;
-            SetUserDetails();
-            AddPicture();
-            
+            SetUserDetails();            
             //MessageBox.Show("El usuario es: " + username);
         }
 
@@ -129,52 +123,6 @@ namespace Proyecto
             }
         }
 
-        private void AddPicture()
-        {
-            try
-            {
-                OpenFileDialog openFileDialog = new OpenFileDialog();
-                openFileDialog.Filter = "Image Files (*.png;*.jpeg;*.jpg;*.gif;*.bmp)|*.png;*.jpeg;*.jpg;*.gif;*.bmp|All Files (*.*)|*.*";
-
-                if (openFileDialog.ShowDialog() == true)
-                {
-                    using (SqlConnection connection = db.GetConnection())
-                    {
-                        connection.Open();
-
-                        string usr = username;
-
-                        // Read the selected image file into a byte array
-                        byte[] imageBytes;
-                        using (FileStream fs = new FileStream(openFileDialog.FileName, FileMode.Open, FileAccess.Read))
-                        {
-                            using (BinaryReader br = new BinaryReader(fs))
-                            {
-                                imageBytes = br.ReadBytes((int)fs.Length);
-                            }
-                        }
-
-                        // Update the profilePicture column in the database
-                        string query = "UPDATE USUARIOS SET fotoUsuario = @imageBytes WHERE username = @username";
-
-                        using (SqlCommand cmd = new SqlCommand(query, connection))
-                        {
-                            cmd.Parameters.AddWithValue("@imageBytes", imageBytes);
-                            cmd.Parameters.AddWithValue("@username", usr);
-
-                            cmd.ExecuteNonQuery();
-                        }
-                    }
-
-                    SetUserDetails();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al agregar la imagen: " + ex.Message);
-            }
-        }
-
         private void rutas_btn_Click(object sender, RoutedEventArgs e)
         {
 
@@ -184,11 +132,13 @@ namespace Proyecto
         //estam seccion permite que el usuario pueda modificar conductores
         private void conductores_btn_Click(object sender, RoutedEventArgs e)
         {
+            MantConductor conductorWindow = new MantConductor();
             conductorWindow.Show();
         }
 
         private void vehiculos_btn_Click(object sender, RoutedEventArgs e)
         {
+            MantVehiculos mantVehiculos = new MantVehiculos();
             mantVehiculos.Show();
         }
 
